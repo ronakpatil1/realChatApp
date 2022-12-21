@@ -1,0 +1,86 @@
+.logo{
+    display: block;
+    margin: auto;/*to center the element*/
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: transparent;
+    padding-bottom: 5px;
+}
+.heading{
+    display: block;
+    margin: auto;
+    font-size:24px;
+    color:darkmagenta;
+    font-family:monospace;
+    width: 370px;
+    height: 40px;
+    padding-bottom: 3px;
+}
+.container{
+    max-width: 995px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(241, 130, 180);
+    height: 60vh;
+    overflow-y: auto;/* msgs will be not overflowing out of the container, they would be scrollable*//*will only see scroll bar when lot of messages are their*/
+    margin: auto;
+    /*hide scrollbar*/
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */ /*idk if it is really useful*/
+    overflow-y: scroll;
+    border-radius: 2%;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+  
+.message{
+    background-color: #edf4f6;
+    width: 24%;
+    padding: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 17px 20px 23px 16px;
+    border-radius: 24px;
+    border:2px solid rgb(235, 163, 145);
+}
+
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+    float: right;
+    clear: both;
+}
+
+#send-container{
+    display: block;/*Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    max-width: 985px;
+}
+
+#msgInp{
+    width: 93%;
+    border: 2px solid rgb(250, 249, 255);
+    border-radius: 20px;
+    margin-top: 10px;
+    text-indent: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    height: 30px;
+}
+.btn{
+    cursor: pointer;
+    border: 2px solid rgb(252, 251, 255);
+    border-radius: 6px;
+    height: 30px;
+
+}
+
+body{
+    height: 100vh;
+    background: rgb(54,149,203);
+background: linear-gradient(39deg, rgba(54,149,203,1) 0%, rgb(245, 221, 236) 59%);
+
+    }
